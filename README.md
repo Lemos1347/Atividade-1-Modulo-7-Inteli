@@ -6,13 +6,13 @@
 
 A imagem construída foi subida para o dockerhub, ela pode ser encontrada em: [docker.io/lemos12/curriculo-docker](https://hub.docker.com/r/lemos12/curriculo-docker)
 
-Para realizar o upload, foi utilizado do seguinte comando:
+Para realizar o upload, foi utilizado do seguinte comando no termial:
 
 ```shell
 docker push <IMAGE NAME>
 ```
 
-Caso queira rodar com a imagem do dockerhub, rode os seguintes comandos:
+Caso queira rodar com a imagem do dockerhub, rode os seguintes comandos no seu terminal:
 
 ```shell
 docker pull lemos12/curriculo-docker
@@ -27,13 +27,13 @@ Pronto! Agora você pode acessar o currículo em:
 
 ### Realizando o build da imagem no seu computador
 
-Para rodar a aplicação, clone primeiro esse repositório:
+Para rodar a aplicação, clone primeiro esse repositório com esse comando em seu terminal:
 
 ```shell
 git clone https://github.com/Lemos1347/Atividade-1-Modulo-7-Inteli.git
 ```
 
-Depois navegue até a pasta dos aquivos e na 'root' desse projeto digite os seguintes comandos:
+Depois navegue até a pasta dos aquivos e na 'root' desse projeto digite os seguintes comandos no seu terminal:
 
 ```shell
 docker build -t curriculo-henrique .
@@ -48,7 +48,7 @@ docker run -dp 3000:3000 curriculo-henrique
 Pronto! Agora você pode acessar o currículo em:
 [**http://localhost:3000/**](http://localhost:3000/)
 
-Para parar a aplicação, primeiro pegue o ID do seu container:
+Para parar a aplicação, primeiro pegue o ID do seu container com esse comando em seu terminal:
 
 ```shell
 docker ps
