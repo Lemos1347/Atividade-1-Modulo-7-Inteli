@@ -2,41 +2,6 @@
 
 ## Como rodar
 
-### Realizando o build da imagem no seu computador
-
-Para rodar a aplicação, clone primeiro esse repositório:
-
-```shell
-git clone https://github.com/Lemos1347/Atividade-1-Modulo-7-Inteli.git
-```
-
-Depois navegue até a pasta dos aquivos e na 'root' desse projeto digite os seguintes comandos:
-
-```shell
-docker build -t curriculo-henrique .
-```
-
-_!Observação!: os primeiros números antes dos dois pontos representam a porta que o seu computador usará para acessar qualquer conteúdo do contairner, então qualquer problema que tiver se portas já em uso, alterar apenas o primeiro valor_
-
-```shell
-docker run -dp 3000:3000 curriculo-henrique
-```
-
-Pronto! Agora você pode acessar o currículo em:
-[**http://localhost:3000/**](http://localhost:3002/)
-
-Para parar a aplicação, primeiro pegue o ID do seu container:
-
-```shell
-docker ps
-```
-
-Após localizar a imagem 'curriculo-henrique', rode o seguinte comando em seu terminal com o seu respectivo ID:
-
-```shell
-docker stop <CONTAINER ID>
-```
-
 ### Rodando com a imagem hospedada no dockerhub
 
 A imagem construída foi subida para o dockerhub, ela pode ser encontrada em: [docker.io/lemos12/curriculo-docker](https://hub.docker.com/r/lemos12/curriculo-docker)
@@ -58,7 +23,42 @@ docker run -dp 3000:3000 lemos12/curriculo-docker
 ```
 
 Pronto! Agora você pode acessar o currículo em:
-[**http://localhost:3000/**](http://localhost:3002/)
+[**http://localhost:3000/**](http://localhost:3000/)
+
+### Realizando o build da imagem no seu computador
+
+Para rodar a aplicação, clone primeiro esse repositório:
+
+```shell
+git clone https://github.com/Lemos1347/Atividade-1-Modulo-7-Inteli.git
+```
+
+Depois navegue até a pasta dos aquivos e na 'root' desse projeto digite os seguintes comandos:
+
+```shell
+docker build -t curriculo-henrique .
+```
+
+_!Observação!: os primeiros números antes dos dois pontos representam a porta que o seu computador usará para acessar qualquer conteúdo do contairner, então qualquer problema que tiver se portas já em uso, alterar apenas o primeiro valor_
+
+```shell
+docker run -dp 3000:3000 curriculo-henrique
+```
+
+Pronto! Agora você pode acessar o currículo em:
+[**http://localhost:3000/**](http://localhost:3000/)
+
+Para parar a aplicação, primeiro pegue o ID do seu container:
+
+```shell
+docker ps
+```
+
+Após localizar a imagem 'curriculo-henrique', rode o seguinte comando em seu terminal com o seu respectivo ID:
+
+```shell
+docker stop <CONTAINER ID>
+```
 
 ## Hospedagem do HTML
 
